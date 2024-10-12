@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "auction_dapp_backend": {
+      "main": "src/auction_dapp_backend/main.mo",
+      "type": "motoko"
+    },
+    "auction_dapp_frontend": {
+      "dependencies": [
+        "auction_dapp_backend"
+      ],
+      "source": [
+        "src/auction_dapp_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "auction_dapp_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
